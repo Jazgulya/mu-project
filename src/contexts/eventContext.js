@@ -2,7 +2,8 @@ import axios from "axios";
 import React, { useReducer } from "react";
 export const eventContext = React.createContext();
 
-const API = "http://localhost:8000/events";
+// const API = "http://localhost:8000/events";
+const API = "https://jazgul.herokuapp.com/data";
 const INIT_STATE = {
   events: [],
   oneEvent: null,
