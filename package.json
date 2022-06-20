@@ -2,10 +2,6 @@
   "name": "hackaton-react-1",
   "version": "0.1.0",
   "private": true,
-  "engines": {
-    "npm": ">=7.0.0",
-    "node": ">=16.0.0"
-  },
   "dependencies": {
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
@@ -20,7 +16,6 @@
     "react": "^18.1.0",
     "react-calendar": "^3.7.0",
     "react-carousel": "^4.3.0",
-    "react-credit-cards": "^0.8.3",
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
     "react-responsive-carousel": "^3.2.23",
