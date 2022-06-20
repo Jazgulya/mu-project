@@ -1,0 +1,109 @@
+#number-1 {
+  font-size: 13px;
+}
+#number-2 {
+  font-size: 13px;
+}
+.appbar {
+  width: 100%;
+  background: rgb(63, 94, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(232, 73, 122, 1) 88%,
+    rgba(246, 71, 111, 1) 93%,
+    rgba(252, 70, 107, 0.7707457983193278) 99%
+  );
+  position: fixed;
+}
+
+.btn_log-in {
+  text-decoration: none;
+}
+
+.menu_list > li {
+  position: relative;
+  margin-left: 20px;
+}
+
+.menu_link {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.menu_link:hover {
+  text-decoration: underline;
+}
+
+.menu_sub-list {
+  position: absolute;
+  top: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(232, 73, 122, 1) 88%,
+    rgba(246, 71, 111, 1) 93%,
+    rgba(252, 70, 107, 0.7707457983193278) 99%);
+    padding: 15px;
+    min-width: 200px;
+}
+
+.menu_sub-list li {
+  margin: 10px;
+}
+
+.menu_icon{
+  display: block;
+}
+
+.menu_sub-link {
+  color: white;
+  text-decoration: none;
+}
+
+.menu_sub-link:hover {
+  text-decoration: underline;
+}
+
+/* ......................... */
+.menu_body:hover .menu_sub-list {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0px, 0px);
+  pointer-events: all;
+}
+/* ......................... */
+
+
+@media (min-width: 767px){
+  .menu_list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu_list > li {
+    padding: 10px, 0;
+  }
+
+  .menu_sub-list {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;
+  }
+
+  Box.box_header {
+    display: block;
+  }
+}
+
+@media (max-width: 665px){
+  .menu_icon {
+    transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: all 0.3s ease 0s;  }
+}
